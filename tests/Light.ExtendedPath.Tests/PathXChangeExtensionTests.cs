@@ -65,11 +65,11 @@ public static class PathXChangeExtensionTests
         var pathX = new PathX(options);
         var instanceResult = pathX.ChangeExtension(path, newExtension);
 
-        // parity
-        instanceResult.Should().Be(staticResult, "instance API must mirror static API");
-
         // expectation
         staticResult.Should().Be(expected);
+
+        // parity
+        instanceResult.Should().Be(staticResult, "instance API must mirror static API");
     }
 
     // Null and empty

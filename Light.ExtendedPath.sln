@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8BB81D4B-D06F-4518-9EE0-E1F808D0E9AA}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Light.ExtendedPath", "src\Light.ExtendedPath\Light.ExtendedPath.csproj", "{02923F8D-0E66-4F13-850C-C82BBB42841F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3859B339-3828-4410-AB1C-7A2C397AEF51}"
+	ProjectSection(SolutionItems) = preProject
+		tests\Directory.Build.props = tests\Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Light.ExtendedPath.Tests", "tests\Light.ExtendedPath.Tests\Light.ExtendedPath.Tests.csproj", "{BE7B750E-E589-4D13-AE80-C7100B42AF10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{8F7FB89C-DA3F-44BC-9B45-F90C7E02FA61}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		Light.ExtendedPath.sln.DotSettings = Light.ExtendedPath.sln.DotSettings
+		Directory.Packages.props = Directory.Packages.props
+		Directory.Build.props = Directory.Build.props
+		readme.md = readme.md
+		LICENSE = LICENSE
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{81B514E1-692E-4C51-8BF1-0C4087A1FBD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{FD54C45A-A8F7-4EB2-909B-2110654056F8}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\build-and-test.yml = .github\workflows\build-and-test.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "actions", "actions", "{C9E338ED-89A1-402C-95D9-3E004C68222F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cache-nuget", "cache-nuget", "{F8FCDD49-EE92-4E58-A4B2-CDFAE70ED529}"
+	ProjectSection(SolutionItems) = preProject
+		.github\actions\cache-nuget\action.yml = .github\actions\cache-nuget\action.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02923F8D-0E66-4F13-850C-C82BBB42841F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02923F8D-0E66-4F13-850C-C82BBB42841F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02923F8D-0E66-4F13-850C-C82BBB42841F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02923F8D-0E66-4F13-850C-C82BBB42841F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7B750E-E589-4D13-AE80-C7100B42AF10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7B750E-E589-4D13-AE80-C7100B42AF10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7B750E-E589-4D13-AE80-C7100B42AF10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7B750E-E589-4D13-AE80-C7100B42AF10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02923F8D-0E66-4F13-850C-C82BBB42841F} = {8BB81D4B-D06F-4518-9EE0-E1F808D0E9AA}
+		{BE7B750E-E589-4D13-AE80-C7100B42AF10} = {3859B339-3828-4410-AB1C-7A2C397AEF51}
+		{FD54C45A-A8F7-4EB2-909B-2110654056F8} = {81B514E1-692E-4C51-8BF1-0C4087A1FBD6}
+		{C9E338ED-89A1-402C-95D9-3E004C68222F} = {81B514E1-692E-4C51-8BF1-0C4087A1FBD6}
+		{F8FCDD49-EE92-4E58-A4B2-CDFAE70ED529} = {C9E338ED-89A1-402C-95D9-3E004C68222F}
+	EndGlobalSection
+EndGlobal
