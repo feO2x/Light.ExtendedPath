@@ -86,7 +86,7 @@ public sealed class PathX
         }
 
         var subpath = path.AsSpan(0, subLength);
-        return newExtension.Length > 0 && newExtension[0] == '.' ?
+        return newExtension.StartsWith('.') ?
             string.Concat(subpath, newExtension) :
             string.Concat(subpath, ".", newExtension);
     }
