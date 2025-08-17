@@ -120,7 +120,7 @@ public static class PathXOptionsTests
     [Theory]
     [InlineData(true)] // default ImmutableArray<char>
     [InlineData(false)] // empty ImmutableArray<char>
-    public static void Ctor_ShouldThrowEmptyCollectionException_WhenRecognizedSeparatorsIsDefaultOrEmpty(
+    public static void Constructor_ShouldThrowEmptyCollectionException_WhenRecognizedSeparatorsIsDefaultOrEmpty(
         bool useDefault
     )
     {
@@ -147,7 +147,7 @@ public static class PathXOptionsTests
     }
 
     [Fact]
-    public static void Ctor_ShouldThrowMissingItemException_WhenPreferredSeparatorNotContained()
+    public static void Constructor_ShouldThrowMissingItemException_WhenPreferredSeparatorNotContained()
     {
         var recognizedSeparators = ImmutableArray.Create('\\');
 
