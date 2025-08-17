@@ -19,8 +19,8 @@ jobs:
       - name: Cache NuGet packages
         uses: ./.github/actions/cache-nuget
       - name: Restore dependencies
-        run: dotnet restore ./Light.ExtendedPath.slnx /p:ContinuousIntegrationBuild=true
+        run: dotnet restore ./Light.ExtendedPath.sln /p:ContinuousIntegrationBuild=true
       - name: Build
-        run: dotnet build ./Light.ExtendedPath.slnx --configuration Release --no-restore /p:ContinuousIntegrationBuild=true
+        run: dotnet build ./Light.ExtendedPath.sln --configuration Release --no-restore /p:ContinuousIntegrationBuild=true
       - name: Test
-        run: dotnet test ./Light.ExtendedPath.slnx --configuration Release --no-build --verbosity normal
+        run: dotnet test ./Light.ExtendedPath.sln --configuration Release --no-build --verbosity normal
