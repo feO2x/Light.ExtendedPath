@@ -15,6 +15,7 @@ This library is about extending the existing `System.IO.Path` class in .NET. The
 - Prefer allocation-efficient APIs (ReadOnlySpan/Span, ValueStringBuilder).
 - v1 is string-focused; avoid filesystem side effects unless explicitly requested.
 - Document differences from System.IO.Path clearly (case sensitivity, root rules, device/UNC, trailing separators, full-path semantics).
+- For guard clauses, use the assertions of Light.GuardClauses.
 
 ## Performance
 
