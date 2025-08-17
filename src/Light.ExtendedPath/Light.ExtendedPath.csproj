@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- See src/Directory.Build.props for additional properties -->
+
+  <PropertyGroup>
+    <Description>The Light.ExtendedPath library providing the PathX class.</Description>
+    <PackageReleaseNotes>
+      Light.ExtendedPath 1.0.0
+      ------------------------
+
+      - Initial release 🚀
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <ParentPropsFile>$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))</ParentPropsFile>
+  </PropertyGroup>
+
+  <Import Project="$(ParentPropsFile)" />
+
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsAotCompatible>true</IsAotCompatible>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/feO2x/Light.ExtendedPath.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/feO2x/Light.ExtendedPath</PackageProjectUrl>
+    <PackageTags>paths;file-system;unix;windows;path</PackageTags>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PackageIcon>light-logo.png</PackageIcon>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>
