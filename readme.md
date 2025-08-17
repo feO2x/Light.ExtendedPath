@@ -6,9 +6,9 @@
 
 ## Overview 🔍
 
-Are you converting your .NET code base to run in Linux docker containerson Kubernetes? But you still have to deal with
-Windows file system paths persisted in your database and you are getting angry that the `System.IO.Path` class does not
-support the `\` character? This library will save your day!
+Are you converting your .NET code base to run in Linux docker containers on Kubernetes? But you still have to deal with
+Windows file system paths persisted in your database, and you are getting angry that the `System.IO.Path` class does not
+support the `\` character on UNIX? This library will save your day!
 
 ## Contributing 🤝
 
