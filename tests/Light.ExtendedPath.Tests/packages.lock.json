@@ -224,7 +224,19 @@
         }
       },
       "light.extendedpath": {
-        "type": "Project"
+        "type": "Project",
+        "dependencies": {
+          "Light.GuardClauses": "[13.1.0, )"
+        }
+      },
+      "Light.GuardClauses": {
+        "type": "CentralTransitive",
+        "requested": "[13.1.0, )",
+        "resolved": "13.1.0",
+        "contentHash": "VPnsdOgQf3R8tOwMpf9gG3A5fNd2A2FqbrdYzElA8X3+E0hHrg/pvBM4gHYkCVCe3O1hL5QnGgIPqYpsm33nEA==",
+        "dependencies": {
+          "System.Collections.Immutable": "8.0.0"
+        }
       }
     }
   }

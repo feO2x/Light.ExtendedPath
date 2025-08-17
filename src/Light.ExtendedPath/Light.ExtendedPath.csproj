@@ -12,4 +12,8 @@
     </PackageReleaseNotes>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Light.GuardClauses" />
+  </ItemGroup>
+
 </Project>
